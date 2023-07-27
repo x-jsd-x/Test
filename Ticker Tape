@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticker Tape</title>
+  <style>
+    /* Set the background color for the body */
+    body {
+      background-color: #0678D5;
+      margin: 0; /* Remove default margin for the body */
+    }
+
+    /* Customize the appearance of the ticker tape */
+    .ticker {
+      width: 100%;
+      background-color: #0678D5;
+      overflow: hidden;
+    }
+    .ticker-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: ticker-scroll 20s linear infinite;
+      color: #263746;
+      font-size: 36px;
+      font-weight: bold; /* Make the regular text bold */
+      vertical-align: middle; /* Middle align the text */
+      line-height: 1.8; /* Set line height to adjust vertical alignment */
+    }
+    @keyframes ticker-scroll {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker">
+    <div class="ticker-text">
+      <!-- Place your scrolling text content here -->
+      This is where all of the sales data will go. This will need to be updated to source the information from sales data.
+    </div>
+  </div>
+</body>
+</html>
